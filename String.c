@@ -8,7 +8,11 @@
 
 
 String newString(void){
-    const String emptyString = {.ptr = NULL, .len = 0, .capacity = 0};
+    const String emptyString = {
+        .ptr = NULL,
+        .len = 0, 
+        .capacity = 0
+    };
     return emptyString;
 }
 
@@ -33,4 +37,9 @@ String concat(String str1, String str2){
     str.len = len;
     str.capacity = cap;
     return str;
+}
+
+void freeString(String str){
+    free(str.ptr);
+    return;
 }

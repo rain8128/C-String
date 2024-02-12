@@ -9,3 +9,4 @@ typedef struct String{
 String newString(void);
 String from(char* s);
 String concat(String str1, String str2);
+void freeString(String str);
