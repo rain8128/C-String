@@ -44,7 +44,7 @@ void freeString(String str){
     return;
 }
 
-int At(String str, int index){
+int at(String str, int index){
     if(index < 0 || index >= str.len) return -1;
     else return str.ptr[index];
 }

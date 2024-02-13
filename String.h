@@ -10,5 +10,5 @@ String newString(void);
 String from(char* s);
 String concat(String str1, String str2);
 void freeString(String str);
-int At(String str, int index);
+int at(String str, int index);
 
