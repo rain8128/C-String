@@ -43,3 +43,8 @@ void freeString(String str){
     free(str.ptr);
     return;
 }
+
+char At(String str, int index){
+    if(index < 0 || index >= str.len) return -1;
+    else return str.ptr[index];
+}
