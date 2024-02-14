@@ -40,7 +40,8 @@ String concat(String str1, String str2){
 }
 
 void freeString(String str){
-    free(str.ptr);
+    if(str.ptr)
+        free(str.ptr);
     return;
 }
 
